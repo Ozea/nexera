@@ -26,7 +26,7 @@ const TimelineExperience = () => {
     },
     {
       organization: 'SR Paint',
-      period: 'December 2024 - Ongoing',
+      period: 'July 2024 - Ongoing',
       title: 'Digital & Visual Designer',
       description:
         "At SR Paint, I led the design and development of the company's website, created social media content, and brand identity to strengthen the brand's online presence.",
