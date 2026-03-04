@@ -1,3 +1,4 @@
+import { CtaBanner } from '@/components/CtaBanner/CtaBanner'
 import UiUx from '@/containers/UiUx'
 import type { Metadata } from 'next'
 
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function UiUxPage() {
-  return <UiUx />
+  return (
+    <main className="bg-white text-black pt-15 md:pt-40">
+      <UiUx />
+      <CtaBanner />
+    </main>
+  )
 }
