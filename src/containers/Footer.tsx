@@ -12,7 +12,7 @@ export default function Footer() {
                 <Image src="/logo.svg" alt="Footer Logo" width={60} height={60} className="text-white" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-800">LOKI</h2>
+                <h2 className="text-2xl font-bold text-gray-800">NEXERA</h2>
                 <p className="text-xs text-gray-600">Beyond Brands, We Build Status</p>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm mb-4 md:mb-0">© 2025 LOKI. All rights reserved.</p>
+          <p className="text-gray-600 text-sm mb-4 md:mb-0">© 2025 NEXERA. All rights reserved.</p>
 
           {/* <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-4 md:mb-0">

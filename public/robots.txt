@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://loki-five.vercel.app/
+Host: https://nexera.ie/
 
 # Sitemaps
-Sitemap: https://loki-five.vercel.app/sitemap.xml
+Sitemap: https://nexera.ie/sitemap.xml
