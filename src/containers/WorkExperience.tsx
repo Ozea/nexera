@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
+import { AnimationGeneratorType, Easing, motion } from 'framer-motion'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
@@ -50,7 +50,7 @@ const TimelineExperience = () => {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -61,7 +61,7 @@ const TimelineExperience = () => {
       scaleY: 1,
       transition: {
         duration: 1.5,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as Easing,
       },
     },
   }
@@ -74,7 +74,7 @@ const TimelineExperience = () => {
       transition: {
         delay: 0.7 + index * 0.3,
         duration: 0.5,
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 200,
       },
     }),

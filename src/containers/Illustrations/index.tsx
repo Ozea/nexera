@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { AnimationGeneratorType, motion } from 'framer-motion'
 
 interface Illustration {
   id: number
@@ -74,7 +74,7 @@ export function Illustrations() {
       scale: 1,
       rotateX: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 100,
         damping: 15,
         duration: 0.8,
