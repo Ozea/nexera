@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { AnimationGeneratorType, Easing, motion } from 'framer-motion'
 
 export function DesignApproach() {
   const containerVariants = {
@@ -20,7 +20,7 @@ export function DesignApproach() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -31,7 +31,7 @@ export function DesignApproach() {
       scaleX: 1,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
         delay: 0.2,
       },
     },
@@ -44,7 +44,7 @@ export function DesignApproach() {
       y: 0,
       transition: {
         duration: 0.7,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -60,7 +60,7 @@ export function DesignApproach() {
       rotate: 0,
       opacity: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 200,
         damping: 15,
         delay: 0.1,
@@ -75,7 +75,7 @@ export function DesignApproach() {
       x: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
         delay: 0.2,
       },
     },
@@ -113,7 +113,7 @@ export function DesignApproach() {
         >
           My design and <br />
           <span className="font-normal">
-            development <span className="text-gradient font-bold">apporach</span>
+            development <span className="text-gradient font-bold">approach</span>
           </span>
         </motion.h2>
       </motion.div>

@@ -3,7 +3,7 @@
 import { Illustrations } from '@/containers/Illustrations'
 import { MagazineDesign } from '@/containers/MagazineDesign'
 import { SocialMediaPosts } from '@/containers/SocialMediaPosts'
-import { motion } from 'framer-motion'
+import { Easing, motion } from 'framer-motion'
 
 const fadeInUpVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -12,7 +12,7 @@ const fadeInUpVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -32,7 +32,7 @@ const headerVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -43,7 +43,7 @@ const lineVariants = {
     scaleX: 1,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
       delay: 0.2,
     },
   },
@@ -51,7 +51,7 @@ const lineVariants = {
 
 export default function VisualDesign() {
   return (
-    <main className="bg-white text-black pt-15 md:pt-40">
+    <div>
       {/* Hero Section */}
       <motion.section
         className="container mx-auto px-4 w-full mb-20 md:mb-25"
@@ -177,6 +177,6 @@ export default function VisualDesign() {
         {/* Social Media Posts Section */}
         <Illustrations />
       </section>
-    </main>
+    </div>
   )
 }

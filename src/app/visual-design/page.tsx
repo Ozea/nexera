@@ -1,3 +1,4 @@
+import { CtaBanner } from '@/components/CtaBanner/CtaBanner'
 import VisualDesign from '@/containers/VisualDesign'
 import type { Metadata } from 'next'
 
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 }
 
 export default function VisualDesignPage() {
-  return <VisualDesign />
+  return (
+    <main className="bg-white text-black pt-15 md:pt-40">
+      <VisualDesign />
+      <CtaBanner />
+    </main>
+  )
 }

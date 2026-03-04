@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { GradientButton } from '@/components/Button/Gradient'
 import { motion } from 'framer-motion'
 import { DesignApproach } from '@/containers/DesignApproach'
-import WorkExperience from '@/containers/WorkExperience'
 import WorkTogether from '@/containers/WorkTogether'
+import { CtaBanner } from '@/components/CtaBanner/CtaBanner'
 
 export default function Home() {
   return (
@@ -55,13 +55,11 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.4 }}
-                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <GradientButton linkProps={{ href: 'https://www.linkedin.com/in/dashmills0609/', target: '_blank', rel: 'noopener noreferrer' }}>
-                  Get Started
-                </GradientButton>
+                <GradientButton linkProps={{ href: '/contact-us/' }}>Contact Us</GradientButton>
               </motion.div>
             </div>
 
@@ -88,9 +86,10 @@ export default function Home() {
           </div>
         </section>
 
-        <WorkExperience />
+        {/* <WorkExperience /> */}
         <WorkTogether />
         <DesignApproach />
+        <CtaBanner />
       </main>
     </div>
   )

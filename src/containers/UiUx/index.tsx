@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { AnimationGeneratorType, Easing, motion } from 'framer-motion'
 import Image from 'next/image'
 import SimpleTemplates from '@/containers/SimpleTemplates'
 import { LazyPortfolioVideo } from '@/components/OptimisedVideo'
@@ -15,7 +15,7 @@ const headerVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -26,7 +26,7 @@ const lineVariants = {
     scaleX: 1,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
       delay: 0.2,
     },
   },
@@ -39,7 +39,7 @@ const cardVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -55,7 +55,7 @@ const iconVariants = {
     rotate: 0,
     opacity: 1,
     transition: {
-      type: 'spring',
+      type: 'spring' as AnimationGeneratorType,
       stiffness: 200,
       damping: 15,
       delay: 0.1,
@@ -70,7 +70,7 @@ const textVariants = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
       delay: 0.2,
     },
   },
@@ -83,7 +83,7 @@ const fadeInUpVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -95,7 +95,7 @@ const slideInLeftVariants = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -107,7 +107,7 @@ const slideInRightVariants = {
     x: 0,
     transition: {
       duration: 0.8,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -128,7 +128,7 @@ const listItemVariants = {
     x: 0,
     transition: {
       duration: 0.5,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
@@ -140,14 +140,14 @@ const scaleInVariants = {
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: 'easeOut' as Easing,
     },
   },
 }
 
 export default function UiUx() {
   return (
-    <main className="bg-white text-black pt-15 md:pt-40">
+    <div>
       {/* Hero Section */}
       <motion.section className="container mx-auto px-4 w-full mb-20 md:mb-25" initial="hidden" animate="visible" variants={staggerContainer}>
         <div className="gap-8">
@@ -601,6 +601,6 @@ export default function UiUx() {
           <SimpleTemplates projects={webDesignProjects} />
         </motion.div>
       </motion.section>
-    </main>
+    </div>
   )
 }
