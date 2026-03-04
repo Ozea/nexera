@@ -1,6 +1,6 @@
 import { CenteredFullWidthImage } from '@/components/Image/CenteredFullWidthImage'
 import { LazyPortfolioVideo } from '@/components/OptimisedVideo'
-import { motion } from 'framer-motion'
+import { AnimationGeneratorType, motion } from 'framer-motion'
 import React from 'react'
 
 interface Post {
@@ -52,7 +52,7 @@ export const SocialMediaPosts = () => {
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 100,
         damping: 15,
         duration: 0.6,
@@ -70,7 +70,7 @@ export const SocialMediaPosts = () => {
       opacity: 1,
       y: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 120,
         damping: 12,
         delay: 0.2,
@@ -88,7 +88,7 @@ export const SocialMediaPosts = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as AnimationGeneratorType,
         stiffness: 100,
         damping: 15,
         delay: 0.4,

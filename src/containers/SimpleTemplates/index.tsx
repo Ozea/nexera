@@ -2,7 +2,7 @@ import React from 'react'
 import { LazyPortfolioVideo } from '@/components/OptimisedVideo'
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { Easing, motion } from 'framer-motion'
 import { Project } from '../UiUx/types'
 
 interface Props {
@@ -34,7 +34,7 @@ export default function SimpleTemplates({ projects }: Props) {
       scale: 1,
       transition: {
         duration: 0.8,
-        ease: [0.25, 0.46, 0.45, 0.94], // Custom easing
+        ease: [0.25, 0.46, 0.45, 0.94] as Easing, // Custom easing
       },
     },
   }
@@ -47,7 +47,7 @@ export default function SimpleTemplates({ projects }: Props) {
       transition: {
         duration: 0.6,
         delay: 0.2,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -61,7 +61,7 @@ export default function SimpleTemplates({ projects }: Props) {
       transition: {
         duration: 0.7,
         delay: 0.3,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -73,7 +73,7 @@ export default function SimpleTemplates({ projects }: Props) {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -86,7 +86,7 @@ export default function SimpleTemplates({ projects }: Props) {
       transition: {
         duration: 0.5,
         delay: 0.1,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
   }
@@ -99,14 +99,14 @@ export default function SimpleTemplates({ projects }: Props) {
       transition: {
         duration: 0.4,
         delay: 0.2,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     },
     hover: {
       scale: 1.05,
       transition: {
         duration: 0.2,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as Easing,
       },
     },
   }

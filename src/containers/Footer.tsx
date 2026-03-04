@@ -1,33 +1,8 @@
-import { GradientButton } from '@/components/Button/Gradient'
 import Image from 'next/image'
 
 export default function Footer() {
   return (
     <div className="bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-16 md:py-24">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-700 mb-6">
-              Let&apos;s work together{' '}
-              <span className="whitespace-nowrap font-normal">
-                with <span className="text-gradient">me</span>
-              </span>
-            </h2>
-
-            <p className="text-lg text-gray-600 mb-8">
-              Based in Dublin, Ireland, I help businesses create impactful brands and social media strategies. Let&apos;s bring your vision to life
-              with designs and content that make a lasting impression!
-            </p>
-          </div>
-
-          <div className="w-full md:w-auto">
-            <GradientButton linkProps={{ href: 'https://www.linkedin.com/in/dashmills0609/', target: '_blank', rel: 'noopener noreferrer' }}>
-              Get Started
-            </GradientButton>
-          </div>
-        </div>
-      </div>
-
       <footer className="max-w-6xl mx-auto px-6 py-12 font-sans">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mb-12">
           {/* Logo and Tagline */}
@@ -37,7 +12,7 @@ export default function Footer() {
                 <Image src="/logo.svg" alt="Footer Logo" width={60} height={60} className="text-white" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-gray-800">LOKI</h2>
+                <h2 className="text-2xl font-bold text-gray-800">NEXERA</h2>
                 <p className="text-xs text-gray-600">Beyond Brands, We Build Status</p>
               </div>
             </div>
@@ -85,7 +60,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm mb-4 md:mb-0">© 2025 LOKI. All rights reserved.</p>
+          <p className="text-gray-600 text-sm mb-4 md:mb-0">© 2025 NEXERA. All rights reserved.</p>
 
           {/* <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-4 md:mb-0">

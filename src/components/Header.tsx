@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Easing } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { GradientButton } from './Button/Gradient'
 
@@ -25,7 +25,7 @@ export default function Header() {
       height: 0,
       transition: {
         duration: 0.3,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as Easing,
       },
     },
     open: {
@@ -33,7 +33,7 @@ export default function Header() {
       height: 'auto',
       transition: {
         duration: 0.3,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as Easing,
       },
     },
   }
@@ -53,7 +53,7 @@ export default function Header() {
       transition: {
         delay: i * 0.1,
         duration: 0.3,
-        ease: 'easeOut',
+        ease: 'easeOut' as Easing,
       },
     }),
   }
@@ -95,9 +95,7 @@ export default function Header() {
 
         {/* Desktop CTA Button */}
         <div className="hidden md:block">
-          <GradientButton linkProps={{ href: 'https://www.linkedin.com/in/dashmills0609/', target: '_blank', rel: 'noopener noreferrer' }}>
-            Get Started
-          </GradientButton>
+          <GradientButton linkProps={{ href: '/contact-us/' }}>Get Started</GradientButton>
         </div>
 
         {/* Mobile menu button */}
@@ -170,9 +168,7 @@ export default function Header() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <GradientButton linkProps={{ href: 'https://www.linkedin.com/in/dashmills0609/', target: '_blank', rel: 'noopener noreferrer' }}>
-                  Get Started
-                </GradientButton>
+                <GradientButton linkProps={{ href: '/contact-us/' }}>Get Started</GradientButton>
               </motion.div>
             </div>
           </motion.div>
