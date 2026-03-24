@@ -5,6 +5,7 @@ import { GradientButton } from '@/components/Button/Gradient'
 import { motion } from 'framer-motion'
 import { DesignApproach } from '@/containers/DesignApproach'
 import WorkTogether from '@/containers/WorkTogether'
+import { Works } from '@/containers/Works'
 import { CtaBanner } from '@/components/CtaBanner/CtaBanner'
 
 export default function Home() {
@@ -85,6 +86,8 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+        <Works />
 
         {/* <WorkExperience /> */}
         <WorkTogether />
